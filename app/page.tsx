@@ -31,12 +31,12 @@ export default function IndexPage() {
   const [address, setAddress] = useState(
     txHash
       ? txHash
-      : "0x7a038d2f5be4d196a3ff389497f8d61a639e4a32d353758b4f062cafbc5d475c"
+      : "0x4e5c0af28b2cea27d06677fae1f573572e0ff863c43ae42d2959ca67b90c4390"
   )
   const [busy, setBusy] = useState<boolean>(false)
   const router = useRouter()
   const [open, setOpen] = useState<boolean>(false)
-  const [value, setValue] = useState("eth-mainnet")
+  const [value, setValue] = useState("defi-kingdoms-mainnet")
   const { toast } = useToast()
 
   const handleAllChains = async () => {
@@ -89,7 +89,7 @@ export default function IndexPage() {
                   variant="outline"
                   role="combobox"
                   aria-expanded={open}
-                  className="justify-between"
+                  className="w-[560px] justify-between"
                 >
                   {value
                     ? allChains.find((chain) => chain.name === value)?.label
@@ -97,7 +97,7 @@ export default function IndexPage() {
                   <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
               </PopoverTrigger>
-              <PopoverContent className="p-0">
+              <PopoverContent className="w-[400px] p-0">
                 <Command>
                   <CommandInput placeholder="Search framework..." />
                   <CommandEmpty>No chain found.</CommandEmpty>
@@ -126,7 +126,7 @@ export default function IndexPage() {
             </Popover>
             <Label htmlFor="contract_address">Transaction Hash</Label>
             <Input
-              className=""
+              className="w-[560px]"
               type="input"
               id="address"
               placeholder="Contract Address"

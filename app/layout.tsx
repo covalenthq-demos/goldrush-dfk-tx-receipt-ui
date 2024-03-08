@@ -18,6 +18,13 @@ import { Footer } from "@/components/footer"
 import { KeyDialog } from "@/components/key-dialog"
 import { useEffect, useState } from "react"
 import { Icons } from "@/components/icons"
+import { Roboto } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -32,7 +39,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   },[])
   return (
     <>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" className={roboto.className} suppressHydrationWarning>
         <head />
         <body
           className={cn(
@@ -46,7 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <SiteHeader />
                     {ready ?
                       <TXProvider>
-                        <div className="flex-1">{children}</div>
+                        <div className="flex-1 grk">{children}</div>
                       </TXProvider>
                     :
                     <div className="min-h-screen flex items-center justify-center">    
