@@ -26,15 +26,13 @@ Powered by <span><a href="https://github.com/covalenthq/goldrush-kit">GoldRush K
 
 ## Ready-to-use customizable template
 
-<a href="https://goldrush-tx-receipt-ui.vercel.app" target="_blank">View live template</a>
-
-https://github.com/covalenthq/goldrush-tx-receipt-ui/assets/471422/2cbf6fda-f7f3-4f7f-81fd-65f1d9b71473
+<a href="https://goldrush-dfk-tx-receipt-ui.vercel.app" target="_blank">View live template</a>
 
 ## One-click deploy
 
 Deploy your own Transactions Receipt UI.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcovalenthq%2Fgoldrush-tx-receipt-ui&env=NEXT_PUBLIC_COVALENT_API_KEY&envDescription=Visit%20Covalent%20to%20sign%20up%20for%20an%20API%20key&envLink=https%3A%2F%2Fwww.covalenthq.com%2Fplatform%2Fauth%2Fregister%2F)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/covalenthq-demos/goldrush-dfk-tx-receipt-ui&env=NEXT_PUBLIC_COVALENT_API_KEY&envDescription=Visit%20Covalent%20to%20sign%20up%20for%20an%20API%20key&envLink=https%3A%2F%2Fwww.covalenthq.com%2Fplatform%2Fauth%2Fregister%2F)
 
 ## Local Setup
 
@@ -51,6 +49,18 @@ npm run dev
 ## Documentation
 
 Visit GoldRush's [component documentation](https://www.covalenthq.com/docs/unified-api/quickstart/goldrush-kit/) or [github](https://github.com/covalenthq/goldrush-kit)  for more information.
+
+## Customization
+The following files were added or changed from the main GoldRush Transaction Receipt UI repo for styling specific to DFK:
+- `./styles/globals.css`
+- `./tailwind.config.ts`
+- `./app/page.tsx`
+- `./app/layout.tsx`
+- `./app/tx/[chain]/[tx_hash]/page.tsx`
+- `./components/footer.tsx`
+- `./static/defi-kingdoms.jpg`
+- `./static/dfk-frame.png`
+- `./static/dfk.png`
 
 ## Features
 
